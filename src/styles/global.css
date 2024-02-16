@@ -1,3 +1,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.prueba {
+  border: 1px solid red;
+}
+
+.prueba-b {
+  border: 1px solid blue;
+}
+
+.prueba-g {
+  border: 1px solid rgb(0, 186, 0);
+}
+
+/* 
+  PLANTILLA COLORES
+    Azul
+    Blanco
+    Negro
+    Morado
+    Amarillo
+    Rojo
+*/
+
+/**********************/
+/*     Navigation     */
+/**********************/
+
+.navbar {
+  position: relative;
+  background-color:#8459f9;
+  padding: 0.5rem 1rem;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  color: white;
+  text-decoration: none;
+  line-height: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: red;
+
+  text-decoration: none;
+}
+
+.offcanvas-collapse {
+  bottom: 0;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  overflow-y: auto;
+  transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.offcanvas-collapse.open {
+  visibility: visible;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}

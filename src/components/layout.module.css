@@ -1,0 +1,29 @@
+.container {
+    margin: auto;
+    max-width: 500px;
+    font-family: sans-serif;
+}
+
+.heading {
+    border-bottom: 1px solid #000;
+    color: purple;
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+.nav-links {
+    padding: 12px 10px;
+    display: flex;
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-link-item {
+    padding-right: 2rem;
+}
+
+.nav-link-text {
+    border-bottom: 2px solid #000;
+}

@@ -5,7 +5,22 @@ module.exports = {
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        shimmer: {
+          '100%': {
+            transform: 'translateX(100%)'
+          },
+        },
+      },
+      width: {
+        '14.5': '3.925rem'
+      },
+      colors: {
+        darkBlue: '#1f104f',
+        purpleCart: '#6e4794',
+      },
+    },
   },
   plugins: [],
 }
